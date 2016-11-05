@@ -1,5 +1,24 @@
 {{outlet}}
 
-<h2>{{title}}</h2>
+<h2>List of Artists</h2>
 
-  {{people-list title="List of Artists" people=model}}
+{{#each model as |artist|}}
+  {{artist-list artist=artist}}
+{{/each}}
+
+
+
+<!-- <hr>
+  {{#if isExpanded}}
+    <button {{action "toggleDetails"}}>Hide Details</button>
+    <div class="details">
+      <ul>
+        <li>Nationality: {{model.nationalty}}</li>
+        <li>Time Period: {{model.timePeriod}}</li>
+        <li>Movement: {{model.movement}}</li>
+        <li>Alive? {{model.alive}}</li>
+      </ul>
+    </div>
+  {{else}}
+    <button {{action "toggleDetails"}}>Show Details</button>
+  {{/if}} -->
