@@ -2,7 +2,6 @@
   <div class="name">
     <h3>{{artist.name}}</h3>
 
-
     {{#if isExpanded}}
       <i class="material-icons" {{action "toggleDetails"}}>remove_circle</i>
     {{else}}
@@ -12,13 +11,17 @@
   </div>
   <div class="details">
     {{#if isExpanded}}
-      <div class="detail">
-        <ul>
-          <li>Nationality: {{artist.nationality}}</li>
-          <li>Time Period: {{artist.timePeriod}}</li>
-          <li>Movement: {{artist.movement}}</li>
-          <li>Alive? {{artist.alive}}</li>
-        </ul>
+      <div class="left">
+        <img src={{artist.image}} class="artist-pic"/>
+      </div>
+      <div class="right">
+        <p>
+          Nationality: {{artist.nationality}}<br />
+          Time Period: {{artist.timePeriod}}<br />
+          Movement: {{artist.movement}}<br />
+          Alive? {{artist.alive}}<br />
+        </p>
+        <p>{{artist.description}}</p>
       </div>
     {{else}}
 

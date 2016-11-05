@@ -1,20 +1,52 @@
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Hind', Helvetica, sans-serif;
+}
+h2 {
+  font-size: 2em;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
 }
 ul {
   list-style: none;
 }
-
+.content {
+  text-align: center;
+}
 .artist i {
   opacity: .7;
 }
 .name {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .name h3 {
   padding: 0 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5em;
 }
-.details ul li {
-  padding-bottom: 7px;
+.details {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+
+}
+.details p {
+  line-height: 1.7em;
+  text-align: left;
+}
+.right,
+.left {
+  padding: 30px 0;
+}
+.right p:first-of-type {
+  font-size: .85em;
+}
+img.artist-pic {
+  max-width: 350px;
+  margin: 0 auto;
+  padding-right: 30px;
 }
