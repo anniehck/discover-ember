@@ -50,3 +50,10 @@ img.artist-pic {
   margin: 0 auto;
   padding-right: 30px;
 }
+input {
+  margin-top: 25px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 7px;
+  font-size: .86em;
+}
