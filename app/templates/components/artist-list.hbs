@@ -1,0 +1,30 @@
+<article class="artist">
+  <div class="name">
+    <h3>{{artist.name}}</h3>
+
+    {{#if isExpanded}}
+      <i class="material-icons" {{action "toggleDetails"}}>remove_circle</i>
+    {{else}}
+      <i class="material-icons" {{action "toggleDetails"}}>add_circle</i>
+    {{/if}}
+
+  </div>
+  <div class="details">
+    {{#if isExpanded}}
+      <div class="left">
+        <img src={{artist.image}} class="artist-pic"/>
+      </div>
+      <div class="right">
+        <p>
+          Nationality: {{artist.nationality}}<br />
+          Time Period: {{artist.timePeriod}}<br />
+          Movement: {{artist.movement}}<br />
+          Alive? {{artist.alive}}<br />
+        </p>
+        <p>{{artist.description}}</p>
+      </div>
+    {{else}}
+
+    {{/if}}
+  </div>
+</article>
