@@ -5,5 +5,7 @@ export default DS.Model.extend({
   nationality: DS.attr('string'),
   timePeriod: DS.attr('string'),
   movement: DS.attr('string'),
-  alive: DS.attr('boolean')
+  alive: DS.attr('boolean'),
+  description: DS.attr('string'),
+  image: DS.attr('string')
 });

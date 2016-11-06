@@ -2,7 +2,14 @@
 <div class="content">
   <h2>List of Artists</h2>
 
-  {{#each model as |artist|}}
-    {{artist-list artist=artist}}
-  {{/each}}
+
+{{#list-filter
+  filter=(action 'filterByMovement') as |artists|}}
+  <ul class="results">
+    {{#each artists as |artist|}}
+      <li>{{artist-list artist=artist}}</li>
+    {{/each}}
+  </ul>
+{{/list-filter}}
+
 </div>
